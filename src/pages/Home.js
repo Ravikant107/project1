@@ -55,7 +55,8 @@ const Home = () => {
     (place) =>
       place.price >= filters.priceRange[0] &&
       place.price <= filters.priceRange[1] &&
-      place.rating >= filters.rating
+      place.rating >= filters.rating &&
+      (place.location.toLowerCase()).includes(filters.location.toLowerCase())
   )
 )} />
       </motion.div>
