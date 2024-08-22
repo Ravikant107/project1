@@ -46,7 +46,7 @@ const Header = () => {
           className="bg-indigo-200 px-4 py-2 rounded-full mr-4 hover:cursor-pointer"
           onClick={() => navigate('/profile')}
         >
-          Become a Host
+          Add Place
         </motion.button>
         <motion.div
           whileHover={{ scale: 1.1 }}
@@ -75,13 +75,13 @@ const Header = () => {
                 className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                 onClick={() => navigate('/bookings')}
               >
-                Bookings
+                More
               </div>
               <div
                 className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                 onClick={() => navigate('/profile')}
               >
-                Profile
+                Add Place
               </div>
             </div>
           </motion.div>

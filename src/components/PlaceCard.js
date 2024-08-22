@@ -1,12 +1,20 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const PlaceCard = ({ place }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/place/${place.id}`);
+  };
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       className="bg-gray-800 shadow-md rounded-lg overflow-hidden"
+      onClick={handleClick}
+
     >
       <img
         src={place.imageUrl}
